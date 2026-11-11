@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>S Moazzem Air Travels — GDS Ticketing, Group Fares, Visa &amp; Date Change</title>
+<script>try{var t=localStorage.getItem('smat-theme');if(t==='light')document.documentElement.setAttribute('data-theme','light')}catch(e){}</script>
+<meta name="description" content="Government-approved travel agency with 13+ years of experience in GDS ticketing, group ticketing, visa processing and date changes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --ink:#0c0a14; --ink2:#141120; --line:#2a2540; --text:#f2ede7; --mute:#a9a2b8; --hdr:rgba(12,10,20,.78); --chip:rgba(20,17,32,.7);
+  --coral:#f0705f; --violet:#6a45b0; --blue:#4a86d8;
+  --grad:linear-gradient(100deg,var(--coral),var(--violet) 55%,var(--blue));
+  --disp:"Bricolage Grotesque","Hind Siliguri",system-ui,sans-serif;
+  --body:"Hind Siliguri","Segoe UI",system-ui,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root[data-theme=light]{color-scheme:light;--ink:#faf7f2;--ink2:#ffffff;--line:#e3dbd0;--text:#1b1626;--mute:#5d566e;--coral:#d4503f;--violet:#5b3a9a;--blue:#3a72c2;--hdr:rgba(250,247,242,.85);--chip:rgba(255,255,255,.85)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--ink);color:var(--text);font:400 1.05rem/1.7 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:var(--disp);line-height:1.1;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;margin-bottom:.6rem}
+p{margin:0 0 1rem;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+section{padding:96px 0}
+.lead{color:var(--mute);font-size:1.12rem;margin-bottom:2.4rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--text);font:600 1rem var(--body);cursor:pointer;text-decoration:none;transition:transform .2s,border-color .2s,background .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--coral)}
+.btn.primary{background:var(--grad);border:0;color:#fff}
+.btn.primary:hover{filter:brightness(1.1)}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:var(--hdr);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font:800 1.05rem var(--disp)}
+.brand svg{width:34px;height:34px}
+nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--mute);font-weight:500;font-size:.98rem;transition:color .2s}
+nav a:hover{color:var(--text)}
+.tools{display:flex;gap:.6rem;align-items:center}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--mute);padding:.35rem .8rem;font:600 .9rem var(--body);cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--grad);color:#fff}
+.themebtn{width:40px;height:36px;border-radius:50%;border:1px solid var(--line);background:none;color:var(--text);font-size:1.1rem;cursor:pointer;transition:border-color .2s,transform .3s}
+.themebtn:hover{border-color:var(--coral);transform:rotate(20deg)}
+.phone{font:800 clamp(1.4rem,3vw,1.9rem) var(--disp);text-decoration:none;display:block;margin:.3rem 0 1rem}
+@media (min-width:861px) and (max-width:1040px){.brand span{display:none}}
+@media (max-width:480px){.brand span{font-size:.78rem;line-height:1.1;max-width:5.6rem}.lang button{padding:.3rem .6rem}.tools{gap:.4rem}}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:42px;height:38px;color:var(--text);font-size:1.2rem;cursor:pointer}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:120px 0 64px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:70vmax;height:70vmax;right:-25vmax;top:-20vmax;background:radial-gradient(closest-side,rgba(106,69,176,.35),transparent);pointer-events:none}
+.hero h1{font-size:clamp(2.8rem,9vw,6.4rem);font-weight:800;max-width:14ch}
+.hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:1.2rem;color:var(--mute);margin:1.4rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.badges{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:2.4rem}
+.badge{border:1px solid var(--line);border-radius:12px;padding:.55rem .95rem;font-size:.93rem;color:var(--mute);background:var(--chip)}
+.badge b{color:var(--text);font-weight:600}
+.route{position:absolute;left:0;right:0;bottom:0;height:46vh;width:100%;pointer-events:none;opacity:.95}
+.route path.trail{fill:none;stroke:url(#g);stroke-width:2;stroke-dasharray:6 9;stroke-dashoffset:0}
+.route .city{fill:var(--ink);stroke:var(--coral);stroke-width:2}
+.route text{fill:var(--mute);font:600 15px var(--body)}
+#plane{filter:drop-shadow(0 0 10px rgba(74,134,216,.7))}
+
+/* about */
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:3rem;align-items:start}
+.facts{display:grid;gap:1rem}
+.fact{background:var(--ink2);border:1px solid var(--line);border-radius:18px;padding:1.3rem 1.5rem}
+.fact strong{display:block;font:800 2.6rem var(--disp);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+.fact span{color:var(--mute);font-size:.95rem}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem 3rem}
+.skill .row{display:flex;justify-content:space-between;font-weight:600;margin-bottom:.45rem}
+.skill .row em{font-style:normal;color:var(--mute);font-weight:400}
+.bar{height:8px;background:var(--ink2);border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.note{color:var(--mute);font-size:.88rem;margin-top:1.6rem}
+
+/* projects */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
+.card{background:var(--ink2);border:1px solid var(--line);border-radius:20px;padding:0;text-align:left;color:inherit;font:inherit;cursor:pointer;overflow:hidden;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--violet);transform:translateY(-4px)}
+.card .top{padding:1.5rem 1.5rem 1rem}
+.card h3{font-size:1.35rem;margin:.9rem 0 .4rem}
+.card .ico{width:44px;height:44px;border-radius:12px;background:var(--grad);display:grid;place-items:center;font-size:1.3rem}
+.card .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.card .more>div{overflow:hidden}
+.card .more ul{margin:0;padding:0 1.5rem 1.4rem 2.6rem;color:var(--mute);font-size:.96rem}
+.card[aria-expanded=true]{border-color:var(--coral)}
+.card[aria-expanded=true] .more{grid-template-rows:1fr}
+.card .hint{display:block;padding:0 1.5rem 1.2rem;color:var(--coral);font-size:.88rem;font-weight:600}
+
+/* timeline */
+.tl{position:relative;margin:0;padding:0 0 0 2rem;list-style:none;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 2.2rem 1rem}
+.tl li::before{content:"";position:absolute;left:-2.6rem;top:.45rem;width:14px;height:14px;border-radius:50%;background:var(--ink);border:3px solid var(--coral)}
+.tl h3{font-size:1.3rem}
+.tl time{color:var(--coral);font-weight:600;font-size:.92rem}
+.ach{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.4rem}
+.ach div{border:1px dashed var(--line);border-radius:16px;padding:1.1rem 1.3rem;color:var(--mute);font-size:.95rem}
+.ach div.real{border:1px solid var(--violet);color:var(--text)}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0;border-top:1px solid var(--line)}
+.svc article{padding:1.8rem 1.6rem 1.8rem 0;border-bottom:1px solid var(--line)}
+.svc h3{font-size:1.4rem;margin-bottom:.4rem}
+.svc p{color:var(--mute);margin:0}
+
+/* airlines */
+.partners{margin-bottom:3rem}
+.partners h3{font-size:1.5rem;margin-bottom:1rem}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.8rem}
+.pcard{background:var(--ink2);border:1px solid var(--line);border-radius:16px;padding:1rem 1.1rem;transition:border-color .25s,transform .25s}
+.pcard:hover{border-color:var(--violet);transform:translateY(-3px)}
+.pcard b{display:block;font:800 1.9rem/1 var(--disp);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:.35rem}
+.pcard span{font-size:.95rem;font-weight:500}
+.pcard.more{display:grid;align-content:center;border-style:dashed;color:var(--mute)}
+.tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.6rem}
+.tabs button{border:1px solid var(--line);background:none;color:var(--mute);border-radius:999px;padding:.45rem 1.1rem;font:600 .95rem var(--body);cursor:pointer;transition:border-color .2s}
+.tabs button:hover{border-color:var(--coral)}
+.tabs button[aria-pressed=true]{background:var(--grad);border-color:transparent;color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chip{border:1px solid var(--line);background:var(--ink2);border-radius:12px;padding:.5rem .95rem;font-weight:500;animation:fadein .35s both}
+.chip small{color:var(--coral);font-weight:600;margin-left:.5rem;font-size:.85rem}
+.chip.top{border-color:var(--violet)}
+@keyframes fadein{from{opacity:0;transform:scale(.96)}}
+/* contact */
+.contact{background:var(--ink2);border:1px solid var(--line);border-radius:28px;padding:clamp(1.6rem,5vw,4rem);display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem}
+.mail{font:800 clamp(1.2rem,3.4vw,2rem) var(--disp);text-decoration:none;word-break:break-all;display:inline-block;margin:.3rem 0 1.2rem;border-bottom:2px solid var(--coral)}
+.social{display:flex;flex-wrap:wrap;gap:.6rem}
+.social a{border:1px solid var(--line);border-radius:999px;padding:.5rem 1.1rem;text-decoration:none;font-weight:500;transition:border-color .2s,background .2s}
+.social a:hover{border-color:var(--blue);background:rgba(74,134,216,.1)}
+.cv{border-left:1px solid var(--line);padding-left:2.5rem}
+footer{padding:2rem 0 3rem;color:var(--mute);font-size:.92rem;text-align:center;border-top:1px solid var(--line)}
+
+/* reveal: only the hero is orchestrated; other sections simply appear */
+.hero h1,.hero p,.hero .cta,.hero .badges{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.hero p{animation-delay:.15s}.hero .cta{animation-delay:.3s}.hero .badges{animation-delay:.45s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.bar i{transition:none}}
+
+@media (max-width:860px){
+  section{padding:72px 0}
+  .about,.contact{grid-template-columns:1fr}
+  .skills{grid-template-columns:1fr}
+  .cv{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:1.8rem}
+  .burger{display:block}
+  nav{position:absolute;top:100%;left:0;right:0;background:var(--ink);border-bottom:1px solid var(--line);display:none}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0;padding:.5rem 4%}
+  nav li a{display:block;padding:.9rem 0;font-size:1.05rem}
+  .brand span{font-size:.95rem}
+  .route{height:30vh}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a class="brand" href="#hero" aria-label="S Moazzem Air Travels">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#f0705f"/><stop offset=".55" stop-color="#6a45b0"/><stop offset="1" stop-color="#4a86d8"/></linearGradient></defs><path d="M3 31c9-3 20-9 31-22 2-2 4-2 3 0-3 11-12 20-24 25z" fill="url(#lg)"/><path d="M2 36c10-1 22-6 30-13" stroke="url(#lg)" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+      <span>S Moazzem Air Travels</span>
+    </a>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#about" data-en="About" data-bn="পরিচিতি">About</a></li>
+        <li><a href="#skills" data-en="Skills" data-bn="দক্ষতা">Skills</a></li>
+        <li><a href="#projects" data-en="Projects" data-bn="কাজের ধরন">Projects</a></li>
+        <li><a href="#experience" data-en="Experience" data-bn="অভিজ্ঞতা">Experience</a></li>
+        <li><a href="#services" data-en="Services" data-bn="সেবা">Services</a></li>
+        <li><a href="#airlines" data-en="Airlines" data-bn="এয়ারলাইন্স">Airlines</a></li>
+        <li><a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="bn" aria-pressed="false">বাং</button>
+      </div>
+      <button class="themebtn" id="themeBtn" type="button" aria-label="Switch to day mode">☀</button>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="hero">
+  <div class="wrap">
+    <h1 data-en="Your journey, ticketed with 13 years of care." data-bn="১৩ বছরের অভিজ্ঞতায় আপনার সফর, নিশ্চিন্তে।">Your journey, ticketed with 13 years of care.</h1>
+    <p data-en="S Moazzem Air Travels is a government-approved travel agency handling GDS ticketing, group fares, visa processing and date changes — quickly, accurately and at fair prices." data-bn="এস মোয়াজ্জেম এয়ার ট্রাভেলস একটি সরকার অনুমোদিত ট্রাভেল এজেন্সি। জিডিএস টিকেটিং, গ্রুপ টিকেটিং, ভিসা প্রসেস ও ডেট চেঞ্জ — দ্রুত, নির্ভুল ও ন্যায্য মূল্যে।">S Moazzem Air Travels is a government-approved travel agency handling GDS ticketing, group fares, visa processing and date changes — quickly, accurately and at fair prices.</p>
+    <div class="cta">
+      <a class="btn primary" href="#contact" data-en="Get a quote" data-bn="কোটেশন নিন">Get a quote</a>
+      <a class="btn" href="#services" data-en="See services" data-bn="সেবাসমূহ দেখুন">See services</a>
+    </div>
+    <div class="badges">
+      <div class="badge"><b>13+</b> <span data-en="years of experience" data-bn="বছরের অভিজ্ঞতা">years of experience</span></div>
+      <div class="badge"><b>20,000+</b> <span data-en="travellers served" data-bn="যাত্রীকে সেবা প্রদান">travellers served</span></div>
+      <div class="badge"><b data-en="Govt. approved" data-bn="সরকার অনুমোদিত">Govt. approved</b> · No. 0013828</div>
+    </div>
+  </div>
+  <svg class="route" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#f0705f"/><stop offset=".55" stop-color="#6a45b0"/><stop offset="1" stop-color="#4a86d8"/></linearGradient></defs>
+    <path id="path" class="trail" d="M-20 280 C 300 40, 800 20, 1220 150"/>
+    <g id="plane"><path d="M-14 8 L16 0 L-14 -8 L-8 0Z" style="fill:var(--text)"/></g>
+  </svg>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2 data-en="Tickets are the easy part. Getting it right is the work." data-bn="টিকেট কাটা সহজ, নির্ভুলভাবে করাই আসল কাজ।">Tickets are the easy part. Getting it right is the work.</h2>
+      <p class="lead" data-en="Since opening, S Moazzem Air Travels has helped travellers and groups book flights, fix itinerary changes and prepare visa paperwork." data-bn="শুরু থেকেই এস মোয়াজ্জেম এয়ার ট্রাভেলস যাত্রী ও গ্রুপের ফ্লাইট বুকিং, যাত্রাপথ পরিবর্তন এবং ভিসার কাগজপত্র প্রস্তুতিতে সহায়তা করে আসছে।">Since opening, S Moazzem Air Travels has helped travellers and groups book flights, fix itinerary changes and prepare visa paperwork.</p>
+      <p data-en="Our work runs on GDS systems, careful fare checking and clear communication. You get a straight answer on price, timing and rules before anything is issued. [Edit this paragraph with your own story, team size and office location.]" data-bn="আমাদের কাজ জিডিএস সিস্টেম, সতর্ক ফেয়ার যাচাই ও স্পষ্ট যোগাযোগের ওপর দাঁড়িয়ে। টিকেট ইস্যুর আগেই দাম, সময় ও নিয়ম সম্পর্কে পরিষ্কার তথ্য পাবেন। [এই অংশে আপনার নিজের গল্প, টিমের আকার ও অফিসের ঠিকানা লিখুন।]">Our work runs on GDS systems, careful fare checking and clear communication. You get a straight answer on price, timing and rules before anything is issued. [Edit this paragraph with your own story, team size and office location.]</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><strong><span class="count" data-to="13">0</span>+</strong><span data-en="years in air travel" data-bn="বছর ধরে এয়ার ট্রাভেলে">years in air travel</span></div>
+      <div class="fact"><strong><span class="count" data-to="20000">0</span>+</strong><span data-en="travellers served" data-bn="যাত্রীকে সেবা প্রদান">travellers served</span></div>
+      <div class="fact"><strong style="font-size:1.6rem;padding:.4rem 0">0013828</strong><span data-en="Government approval number" data-bn="সরকারি অনুমোদন নম্বর">Government approval number</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 data-en="What we do best" data-bn="যে কাজে আমরা সেরা">What we do best</h2>
+    <p class="lead" data-en="Four areas where our daily work is concentrated." data-bn="চারটি ক্ষেত্রে আমাদের প্রতিদিনের কাজ কেন্দ্রীভূত।">Four areas where our daily work is concentrated.</p>
+    <div class="skills">
+      <div class="skill"><div class="row"><span data-en="GDS Ticketing" data-bn="জিডিএস টিকেটিং">GDS Ticketing</span><em>90%</em></div><div class="bar"><i data-w="90"></i></div></div>
+      <div class="skill"><div class="row"><span data-en="Group Ticketing" data-bn="গ্রুপ টিকেটিং">Group Ticketing</span><em>85%</em></div><div class="bar"><i data-w="85"></i></div></div>
+      <div class="skill"><div class="row"><span data-en="Visa Process" data-bn="ভিসা প্রসেস">Visa Process</span><em>80%</em></div><div class="bar"><i data-w="80"></i></div></div>
+      <div class="skill"><div class="row"><span data-en="Date Change" data-bn="ডেট চেঞ্জ">Date Change</span><em>90%</em></div><div class="bar"><i data-w="90"></i></div></div>
+    </div>
+    <p class="note" data-en="Bar lengths are visual placeholders. Change the data-w values in the HTML to match your own assessment." data-bn="বারের দৈর্ঘ্য শুধু নমুনা। নিজের মূল্যায়ন অনুযায়ী HTML-এর data-w মান পরিবর্তন করুন।">Bar lengths are visual placeholders. Change the data-w values in the HTML to match your own assessment.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2 data-en="How we handle the work" data-bn="আমরা কীভাবে কাজ করি">How we handle the work</h2>
+    <p class="lead" data-en="Tap a card to see the steps. These are sample workflows, not client case studies — replace them with your own." data-bn="ধাপগুলো দেখতে কার্ডে ট্যাপ করুন। এগুলো নমুনা কাজের ধারা, ক্লায়েন্ট কেস নয় — নিজের তথ্য দিয়ে বদলে নিন।">Tap a card to see the steps. These are sample workflows, not client case studies — replace them with your own.</p>
+    <div class="cards">
+      <button class="card" aria-expanded="false"><div class="top"><div class="ico">✈</div><h3 data-en="Single &amp; family tickets" data-bn="একক ও পারিবারিক টিকেট">Single &amp; family tickets</h3><span style="color:var(--mute)" data-en="GDS search across airlines" data-bn="সব এয়ারলাইনে জিডিএস সার্চ">GDS search across airlines</span></div>
+        <div class="more"><div><ul><li data-en="Compare fares and baggage rules" data-bn="ফেয়ার ও লাগেজ নিয়ম তুলনা">Compare fares and baggage rules</li><li data-en="Confirm names and passport details" data-bn="নাম ও পাসপোর্ট তথ্য নিশ্চিত">Confirm names and passport details</li><li data-en="Issue and send e-ticket" data-bn="ই-টিকেট ইস্যু ও পাঠানো">Issue and send e-ticket</li></ul></div></div><span class="hint" data-en="Tap to expand" data-bn="বিস্তারিত দেখুন">Tap to expand</span></button>
+      <button class="card" aria-expanded="false"><div class="top"><div class="ico">👥</div><h3 data-en="Group bookings" data-bn="গ্রুপ বুকিং">Group bookings</h3><span style="color:var(--mute)" data-en="Special fares for 10+ travellers" data-bn="বড় দলের জন্য বিশেষ ফেয়ার">Special fares for larger groups</span></div>
+        <div class="more"><div><ul><li data-en="Request group fare from the airline" data-bn="এয়ারলাইন থেকে গ্রুপ ফেয়ার সংগ্রহ">Request group fare from the airline</li><li data-en="Hold seats, then confirm deposit deadlines" data-bn="সিট হোল্ড ও ডিপোজিটের সময়সীমা নিশ্চিত">Hold seats, then confirm deposit deadlines</li><li data-en="Collect name list and issue together" data-bn="নামের তালিকা নিয়ে একসাথে ইস্যু">Collect name list and issue together</li></ul></div></div><span class="hint" data-en="Tap to expand" data-bn="বিস্তারিত দেখুন">Tap to expand</span></button>
+      <button class="card" aria-expanded="false"><div class="top"><div class="ico">🛂</div><h3 data-en="Visa processing" data-bn="ভিসা প্রসেসিং">Visa processing</h3><span style="color:var(--mute)" data-en="Checklist-led document support" data-bn="চেকলিস্ট ভিত্তিক কাগজপত্র সহায়তা">Checklist-led document support</span></div>
+        <div class="more"><div><ul><li data-en="Share the embassy document checklist" data-bn="দূতাবাসের কাগজপত্রের তালিকা প্রদান">Share the embassy document checklist</li><li data-en="Review documents before submission" data-bn="জমার আগে কাগজপত্র যাচাই">Review documents before submission</li><li data-en="Guide appointment and tracking" data-bn="অ্যাপয়েন্টমেন্ট ও ট্র্যাকিং নির্দেশনা">Guide appointment and tracking</li></ul></div></div><span class="hint" data-en="Tap to expand" data-bn="বিস্তারিত দেখুন">Tap to expand</span></button>
+      <button class="card" aria-expanded="false"><div class="top"><div class="ico">📅</div><h3 data-en="Date change &amp; reissue" data-bn="ডেট চেঞ্জ ও রিইস্যু">Date change &amp; reissue</h3><span style="color:var(--mute)" data-en="Fare rules checked first" data-bn="আগে ফেয়ার রুলস যাচাই">Fare rules checked first</span></div>
+        <div class="more"><div><ul><li data-en="Read the fare rules for change fees" data-bn="চেঞ্জ ফির জন্য ফেয়ার রুলস পড়া">Read the fare rules for change fees</li><li data-en="Quote the total before you decide" data-bn="সিদ্ধান্তের আগে মোট খরচ জানানো">Quote the total before you decide</li><li data-en="Reissue and send the updated ticket" data-bn="রিইস্যু করে নতুন টিকেট পাঠানো">Reissue and send the updated ticket</li></ul></div></div><span class="hint" data-en="Tap to expand" data-bn="বিস্তারিত দেখুন">Tap to expand</span></button>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2 data-en="13+ years, one step at a time" data-bn="১৩+ বছরের পথচলা">13+ years, one step at a time</h2>
+    <p class="lead" data-en="Add exact years and milestones in the placeholders below." data-bn="নিচের নমুনা অংশে নির্দিষ্ট সাল ও মাইলফলক যোগ করুন।">Add exact years and milestones in the placeholders below.</p>
+    <ol class="tl">
+      <li><time data-en="[Year] — Start" data-bn="[সাল] — শুরু">[Year] — Start</time><h3 data-en="Entered the air travel industry" data-bn="এয়ার ট্রাভেল শিল্পে যাত্রা শুরু">Entered the air travel industry</h3><p data-en="[Describe your first role and what you learned about airline systems and fares.]" data-bn="[আপনার প্রথম দায়িত্ব এবং এয়ারলাইন সিস্টেম ও ফেয়ার সম্পর্কে যা শিখেছেন লিখুন।]">[Describe your first role and what you learned about airline systems and fares.]</p></li>
+      <li><time data-en="[Year] — Growth" data-bn="[সাল] — প্রসার">[Year] — Growth</time><h3 data-en="Expanded into groups and visas" data-bn="গ্রুপ টিকেটিং ও ভিসা সেবায় সম্প্রসারণ">Expanded into groups and visas</h3><p data-en="[Add when group ticketing and visa support became part of your services.]" data-bn="[গ্রুপ টিকেটিং ও ভিসা সেবা কবে যুক্ত হয়েছে তা লিখুন।]">[Add when group ticketing and visa support became part of your services.]</p></li>
+      <li><time data-en="Today" data-bn="বর্তমান">Today</time><h3 data-en="S Moazzem Air Travels" data-bn="এস মোয়াজ্জেম এয়ার ট্রাভেলস">S Moazzem Air Travels</h3><p data-en="A government-approved agency (No. 0013828) serving individual travellers and groups." data-bn="সরকার অনুমোদিত এজেন্সি (নং ০০১৩৮২৮), একক যাত্রী ও গ্রুপের সেবায় নিয়োজিত।">A government-approved agency (No. 0013828) serving individual travellers and groups.</p></li>
+    </ol>
+    <div class="ach">
+      <div class="real" data-en="13+ years of hands-on experience" data-bn="১৩+ বছরের সরাসরি অভিজ্ঞতা">13+ years of hands-on experience</div>
+      <div class="real" data-en="Certification: Government-approved travel agency, Approval No. 0013828" data-bn="সনদ: সরকার অনুমোদিত ট্রাভেল এজেন্সি, অনুমোদন নং ০০১৩৮২৮">Certification: Government-approved travel agency, Approval No. 0013828</div>
+      <div class="real" data-en="20,000+ travellers served" data-bn="২০,০০০+ যাত্রীকে সেবা প্রদান">20,000+ travellers served</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <h2 data-en="Services" data-bn="আমাদের সেবা">Services</h2>
+    <p class="lead" data-en="Tell us the route and dates. We reply with options and a clear price." data-bn="রুট ও তারিখ জানান। আমরা অপশন ও পরিষ্কার মূল্য জানিয়ে দেব।">Tell us the route and dates. We reply with options and a clear price.</p>
+    <div class="svc">
+      <article><h3 data-en="GDS ticketing" data-bn="জিডিএস টিকেটিং">GDS ticketing</h3><p data-en="Domestic and international tickets issued through GDS, with fares checked across airlines." data-bn="জিডিএস-এর মাধ্যমে দেশি ও আন্তর্জাতিক টিকেট, একাধিক এয়ারলাইনের ফেয়ার যাচাইসহ।">Domestic and international tickets issued through GDS, with fares checked across airlines.</p></article>
+      <article><h3 data-en="Group ticketing" data-bn="গ্রুপ টিকেটিং">Group ticketing</h3><p data-en="Seat holds and group fares for families, tour parties and organisations." data-bn="পরিবার, ট্যুর দল ও প্রতিষ্ঠানের জন্য সিট হোল্ড ও গ্রুপ ফেয়ার।">Seat holds and group fares for families, tour parties and organisations.</p></article>
+      <article><h3 data-en="Visa process" data-bn="ভিসা প্রসেস">Visa process</h3><p data-en="Document checklists, review and submission guidance for your visa application." data-bn="ভিসা আবেদনের জন্য কাগজপত্রের তালিকা, যাচাই ও জমাদান নির্দেশনা।">Document checklists, review and submission guidance for your visa application.</p></article>
+      <article><h3 data-en="Date change" data-bn="ডেট চেঞ্জ">Date change</h3><p data-en="Reschedule or reissue existing tickets after checking the airline’s fare rules." data-bn="এয়ারলাইনের ফেয়ার রুলস দেখে বিদ্যমান টিকেটের তারিখ পরিবর্তন বা রিইস্যু।">Reschedule or reissue existing tickets after checking the airline’s fare rules.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="airlines">
+  <div class="wrap">
+    <h2 data-en="Airlines we book" data-bn="যেসব এয়ারলাইনে আমরা বুকিং করি">Airlines we book</h2>
+    <p class="lead" data-en="Our airline partners, plus the full list of international and domestic carriers we book." data-bn="আমাদের এয়ারলাইন পার্টনার এবং যেসব আন্তর্জাতিক ও অভ্যন্তরীণ এয়ারলাইনে আমরা বুকিং করি তার পূর্ণ তালিকা।">Our airline partners, plus the full list of international and domestic carriers we book.</p>
+    <div class="partners">
+      <h3 data-en="Our airline partners" data-bn="আমাদের এয়ারলাইন পার্টনার">Our airline partners</h3>
+      <div class="pgrid">
+        <div class="pcard"><b>EK</b><span>Emirates Airlines</span></div>
+        <div class="pcard"><b>QR</b><span>Qatar Airways</span></div>
+        <div class="pcard"><b>SV</b><span>Saudia Airlines</span></div>
+        <div class="pcard"><b>TK</b><span>Turkish Airlines</span></div>
+        <div class="pcard"><b>SQ</b><span>Singapore Airlines</span></div>
+        <div class="pcard"><b>MH</b><span>Malaysia Airlines</span></div>
+        <div class="pcard"><b>EY</b><span>Etihad Airways</span></div>
+        <div class="pcard"><b>GF</b><span>Gulf Air</span></div>
+        <div class="pcard"><b>WY</b><span>Oman Air</span></div>
+        <div class="pcard"><b>BG</b><span>Biman Bangladesh Airlines</span></div>
+        <div class="pcard"><b>BS</b><span>US-Bangla Airlines</span></div>
+        <div class="pcard"><b>2A</b><span>Air Astra</span></div>
+        <div class="pcard"><b>VQ</b><span>Novoair</span></div>
+        <div class="pcard more"><span data-en="…and more" data-bn="…এবং আরও অনেক">…and more</span></div>
+      </div>
+    </div>
+    <div class="tabs" role="group" aria-label="Filter airlines">
+      <button type="button" data-f="all" aria-pressed="true" data-en="All" data-bn="সব">All</button>
+      <button type="button" data-f="top" aria-pressed="false" data-en="Top international" data-bn="শীর্ষ আন্তর্জাতিক">Top international</button>
+      <button type="button" data-f="intl" aria-pressed="false" data-en="More international" data-bn="আরও আন্তর্জাতিক">More international</button>
+      <button type="button" data-f="dom" aria-pressed="false" data-en="Bangladesh domestic" data-bn="বাংলাদেশ অভ্যন্তরীণ">Bangladesh domestic</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <p class="note" data-en="Airline names and codes belong to their respective owners and are listed only to show where tickets can be booked." data-bn="এয়ারলাইনের নাম ও কোড সংশ্লিষ্ট মালিকের; শুধু কোথায় টিকেট বুকিং করা যায় তা বোঝাতে উল্লেখ করা হয়েছে।">Airline names and codes belong to their respective owners and are listed only to show where tickets can be booked.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2 data-en="Plan your next flight with us" data-bn="আপনার পরবর্তী ফ্লাইট আমাদের সাথে করুন">Plan your next flight with us</h2>
+        <a class="mail" href="mailto:info.smatbd@gmail.com">info.smatbd@gmail.com</a>
+        <p data-en="Include your route, travel dates and number of passengers for the fastest reply." data-bn="দ্রুত উত্তরের জন্য রুট, ভ্রমণের তারিখ ও যাত্রী সংখ্যা জানান।">Include your route, travel dates and number of passengers for the fastest reply.</p>
+        <div class="social">
+          <!-- Replace each # with your real link -->
+          <a href="https://wa.me/smatbd_94" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+8801926185394">Call</a>
+          <a href="#" data-link="facebook" rel="noopener">Facebook</a>
+          <a href="#" data-link="linkedin" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="cv">
+        <h3 style="font-size:1.5rem;margin-bottom:.2rem" data-en="Call or message" data-bn="কল বা মেসেজ করুন">Call or message</h3>
+        <a class="phone" href="tel:+8801926185394">+880 1926 185394</a>
+        <p style="color:var(--mute)" data-en="Send your route and dates on WhatsApp, or call to talk through your trip." data-bn="হোয়াটসঅ্যাপে রুট ও তারিখ পাঠান, অথবা কল করে আপনার সফর নিয়ে কথা বলুন।">Send your route and dates on WhatsApp, or call to talk through your trip.</p>
+        <a class="btn primary" href="https://wa.me/smatbd_94" target="_blank" rel="noopener" data-en="Chat on WhatsApp" data-bn="হোয়াটসঅ্যাপে চ্যাট করুন">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> S Moazzem Air Travels · Govt. Approval No. 0013828</div></footer>
+
+<script>
+(function(){
+  var $=function(s,c){return(c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  $('#yr').textContent=new Date().getFullYear();
+
+  /* day / night mode */
+  var tb=$('#themeBtn');
+  function setTheme(t,save){
+    if(t==='light')document.documentElement.setAttribute('data-theme','light');else document.documentElement.removeAttribute('data-theme');
+    var bn=window.__lang==='bn';
+    tb.textContent=t==='light'?'☾':'☀';
+    tb.setAttribute('aria-label',t==='light'?(bn?'নাইট মোডে যান':'Switch to night mode'):(bn?'ডে মোডে যান':'Switch to day mode'));
+    if(save){try{localStorage.setItem('smat-theme',t)}catch(e){}}
+  }
+  var cur=document.documentElement.getAttribute('data-theme')==='light'?'light':'dark';
+  setTheme(cur,false);
+  tb.addEventListener('click',function(){cur=cur==='light'?'dark':'light';setTheme(cur,true)});
+
+  /* language toggle */
+  var KEY='smat-lang';
+  function setLang(l){
+    document.documentElement.lang=l;
+    $$('[data-en]').forEach(function(el){var t=el.getAttribute('data-'+l);if(t)el.textContent=t});
+    $$('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.lang===l))});
+    try{localStorage.setItem(KEY,l)}catch(e){}
+    window.__lang=l;
+  }
+  $$('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
+  var saved='en';try{saved=localStorage.getItem(KEY)||'en'}catch(e){}
+  if(saved==='bn')setLang('bn');
+
+  /* header + mobile menu */
+  var hd=$('header'),nav=$('#nav'),bg=$('#burger');
+  addEventListener('scroll',function(){hd.classList.toggle('scrolled',scrollY>10)},{passive:true});
+  bg.addEventListener('click',function(){var o=nav.classList.toggle('open');bg.setAttribute('aria-expanded',String(o))});
+  $$('nav a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');bg.setAttribute('aria-expanded','false')})});
+
+  /* cards */
+  $$('.card').forEach(function(c){c.addEventListener('click',function(){
+    var o=c.getAttribute('aria-expanded')==='true';c.setAttribute('aria-expanded',String(!o));
+    var h=$('.hint',c);h.textContent=h.getAttribute('data-'+(window.__lang||'en')).replace(/.*/,function(){
+      return !o?((window.__lang==='bn')?'বন্ধ করুন':'Tap to close'):h.getAttribute('data-'+(window.__lang||'en'))});
+  })});
+
+  /* skill bars + counter on view */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;io.unobserve(e.target);
+    if(e.target.dataset.w)e.target.style.width=e.target.dataset.w+'%';
+    if(e.target.dataset.to){var to=+e.target.dataset.to,n=0,st=Math.ceil(to/30),t=setInterval(function(){n+=st;e.target.textContent=Math.min(n,to).toLocaleString('en-US');if(n>=to)clearInterval(t)},50)}
+  })},{threshold:.4});
+  $$('.bar i,.count').forEach(function(el){io.observe(el)});
+
+  /* hero flight: plane follows the route path once */
+  var p=$('#path'),pl=$('#plane');
+  if(p&&pl){
+    var L=p.getTotalLength(),start=null,D=3600;
+    if(matchMedia('(prefers-reduced-motion:reduce)').matches){place(.55)}
+    else requestAnimationFrame(function f(ts){
+      if(!start)start=ts;var k=Math.min((ts-start)/D,1),e=1-Math.pow(1-k,3);place(e*.9);
+      if(k<1)requestAnimationFrame(f);
+    });
+    function place(k){
+      var a=p.getPointAtLength(L*k),b=p.getPointAtLength(Math.min(L*k+2,L));
+      var ang=Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI;
+      pl.setAttribute('transform','translate('+a.x+' '+a.y+') rotate('+ang+') scale(1.8)');
+    }
+  }
+
+  /* airlines (Oman Air appears once, under top international) */
+  var AL=[
+    ['top',[['Emirates Airlines','EK'],['Qatar Airways','QR'],['Saudia Airlines','SV'],['Turkish Airlines','TK'],['Singapore Airlines','SQ'],['Malaysia Airlines','MH'],['Etihad Airways','EY'],['Gulf Air','GF'],['Oman Air','WY'],['Kuwait Airways','KU']]],
+    ['intl',[['Air Arabia','G9'],['Air Arabia Abu Dhabi','3L'],['Air China','CA'],['Air India','AI'],['AirAsia','AK'],['Batik Air Malaysia','OD'],['Cathay Pacific Airways','CX'],['China Eastern Airlines','MU'],['China Southern Airlines','CZ'],['Drukair','KB'],['EgyptAir','MS'],['Ethiopian Airlines','ET'],['flydubai','FZ'],['Himalaya Airlines','H9'],['IndiGo','6E'],['Jazeera Airways','J9'],['Maldivian','Q2'],['Riyadh Air'],['SalamAir','OV'],['SriLankan Airlines','UL'],['Thai Airways','TG'],['Jin Air','LJ'],['Thai AirAsia','FD'],['Air Premia','YP'],['FitsAir','8D']]],
+    ['dom',[['Biman Bangladesh Airlines','BG'],['US-Bangla Airlines','BS'],['Air Astra','2A'],['Novoair','VQ']]]
+  ];
+  var chips=$('#chips');
+  function drawAL(f){
+    var h='';
+    AL.forEach(function(g){if(f==='all'||f===g[0])g[1].forEach(function(a,i){
+      h+='<span class="chip'+(g[0]==='top'?' top':'')+'" style="animation-delay:'+Math.min(i*25,400)+'ms">'+a[0]+(a[1]?'<small>'+a[1]+'</small>':'')+'</span>';
+    })});
+    chips.innerHTML=h;
+  }
+  drawAL('all');
+  $$('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+    $$('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});drawAL(b.dataset.f);
+  })});
+})();
+</script>
+</body>
+</html>
